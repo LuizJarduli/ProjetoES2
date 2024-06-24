@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["ride-rated.component.ts"],
+  "sourcesContent": ["\n    ::ng-deep .mat-bottom-sheet-container {\n      padding: unset;\n    }\n  "],
+  "mappings": ";AACI,UAAA,CAAA;AACE,WAAA;;",
+  "names": []
+}

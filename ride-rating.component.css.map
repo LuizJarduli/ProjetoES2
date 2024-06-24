@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["ride-rating.component.ts"],
+  "sourcesContent": ["\n    .star:hover {\n      & polygon {\n        fill: yellow !important;\n        stroke: yellow !important;\n      }\n    }\n\n    .chips > button:hover {\n      span,\n      p {\n        color: white;\n      }\n    }\n  "],
+  "mappings": ";AAEM,CAAA,IAAA,OAAA;AACE,QAAA;AACA,UAAA;;AAKF,CAAA,MAAA,EAAA,MAAA,OAAA;AAAA,CAAA,MAAA,EAAA,MAAA,OAAA;AAEE,SAAA;;",
+  "names": []
+}
