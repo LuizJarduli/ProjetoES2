@@ -1,0 +1,67 @@
+<div class="flex flex-col items-center p-4 bg-white w-full">
+  <div
+  class="mb-4 flex items-center justify-between rounded-md bg-white p-4 shadow-sm w-full"
+>
+  <div class="flex cursor-pointer items-center">
+    <button class="mr-2" (click)="close()">
+      <!-- Ícone de voltar -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 text-black"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        />
+      </svg>
+    </button>
+    <span class="text-lg font-medium text-black">Lista de grupos</span>
+  </div>
+</div>
+  <div class="w-full max-w-md bg-white rounded-lg shadow-md p-4">
+    <div class="border-b last:border-0 py-4">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-semibold text-black">Grupo 1</h3>
+          <p class="text-sm text-gray-500">3 / 4 pessoas</p>
+        </div>
+        <button class="bg-blue-500 text-white rounded-lg px-4 py-2" (click)="openRideCreation()">Criar Viagem</button>
+      </div>
+    </div>
+    <div class="border-b last:border-0 py-4">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-semibold text-black">Grupo 2</h3>
+          <p class="text-sm text-gray-500">2 / 4 pessoas</p>
+        </div>
+        <button class="bg-blue-500 text-white rounded-lg px-4 py-2" (click)="openRideCreation()">Criar Viagem</button>
+      </div>
+    </div>
+    <div class="border-b last:border-0 py-4">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-semibold text-black">Grupo 3</h3>
+          <p class="text-sm text-gray-500">4 / 4 pessoas</p>
+        </div>
+        <button class="bg-blue-500 text-white rounded-lg px-4 py-2" (click)="openRideCreation()">Criar Viagem</button>
+      </div>
+    </div>
+    <div class="py-4">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-semibold text-black">Grupo 4</h3>
+          <p class="text-sm text-gray-500">1 / 4 pessoas</p>
+        </div>
+        <button class="bg-blue-500 text-white rounded-lg px-4 py-2" (click)="openRideCreation()">Criar Viagem</button>
+      </div>
+    </div>
+    <div class="flex items-center justify-end">
+      <button class="bg-blue-500 text-white rounded-lg px-4 py-2">Novo Grupo +</button>
+    </div>
+  </div>
+</div>

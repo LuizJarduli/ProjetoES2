@@ -18,8 +18,9 @@ package "Fatecaronas" {
     usecase "Encerrar viagem" as UC9
     usecase "Denunciar perfil" as UC10
     usecase "Bloquear perfil" as UC11
+    usecase "Criar Grupo" as UC18
 }
-
+ 
 package "Fatecaronas admin dashboard" {
     usecase "Gerenciar servidor" as UC12
     usecase "Gerenciar extrato/transações" as UC13
@@ -27,13 +28,13 @@ package "Fatecaronas admin dashboard" {
     usecase "Efetuar bloqueio" as UC15
     usecase "Bloquear uso da conta" as UC16
     usecase "Realizar update" as UC17
-
 }
 
 ' Relations
 p --> UC1
 p --> UC3
 p --> UC5
+p --> UC18
 UC1 <.. UC2: <<extends>>
 UC3 ..> UC6: <<extends>>
 UC9 ..> UC6: <<extends>>
@@ -43,11 +44,13 @@ d --> UC7
 d --> UC8
 d --> UC9
 d --> UC5
+d --> UC18
 a --> UC12
 a --> UC13
 a --> UC14
 UC12 ..> UC17: <<extends>>
 UC14 ..> UC15: <<extends>>
 UC14 ..> UC16: <<extends>>
+UC18 ..> UC7: <<extends>> 
 
 @enduml

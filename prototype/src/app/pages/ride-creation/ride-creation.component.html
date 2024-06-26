@@ -1,0 +1,59 @@
+@if (!accepted) {
+  <div class="flex h-auto flex-col bg-gray-100 p-4 text-black">
+    <div
+      class="mb-4 flex items-center justify-between rounded-md bg-white p-4 shadow-sm"
+    >
+      <div class="flex cursor-pointer items-center">
+        <button class="mr-2" (click)="close()">
+          <!-- Ícone de voltar -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-black"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <span class="text-lg font-medium">Criar viagem</span>
+      </div>
+    </div>
+
+    <div class="mb-4 flex-1 rounded-md bg-white p-4 shadow-sm">
+      <h2 class="mb-4 text-lg font-medium">Deseja criar esta viagem?</h2>
+    </div>
+
+    <div
+      class="flex items-center justify-center gap-2 rounded-md bg-white p-4 text-center shadow-sm"
+    >
+      <button
+        class="flex-1 rounded-md bg-blue-400 p-2 text-white"
+        (click)="close()"
+      >
+        Cancelar
+      </button>
+      <button
+        class="flex-1 rounded-md bg-black p-2 text-white"
+        (click)="accepted = true"
+      >
+        Sim, criar
+      </button>
+    </div>
+  </div>
+} @else {
+  <section class="flex h-80 flex-col items-center justify-center bg-white">
+    <span class="material-symbols-outlined text-black">check</span>
+    <p class="mb-4 text-black">Viagem criada com sucesso!</p>
+    <p class="mb-4 text-black">Você será notificado assim que uma solicitação for feita</p>
+    <button
+      class="w-1/2 rounded-md bg-black p-3 text-center font-bold text-white"
+      (click)="close()"
+      >Finalizar</button>
+  </section>
+}

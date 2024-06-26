@@ -36,4 +36,8 @@ export const PAGES_ROUTES: Routes = [
         (c) => c.RideTransactionsComponent
       ),
   },
+  {
+    path: "driver-home",
+    loadComponent: () => import('./driver-home/driver-home.component').then(c => c.DriverHomeComponent)
+  }
 ]
